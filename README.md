@@ -51,3 +51,9 @@ openqa.opensuse.org \
 https://github.com/os-autoinst/os-autoinst-distri-openQA/pull/67 \
 https://openqa.opensuse.org/tests/1706491
 ```
+
+### Use openqa-cli
+
+```
+docker-compose exec console openqa-cli api --host openqa.opensuse.org /jobs limit=1000 latest=1 state="done"
+```
